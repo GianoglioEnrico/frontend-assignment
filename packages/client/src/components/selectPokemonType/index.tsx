@@ -1,23 +1,14 @@
 import React from "react";
 import { Select, Tooltip } from "antd";
-
 import { InfoCircleOutlined } from "@ant-design/icons";
-import { ISelectType } from "../utils/types";
+import { ISelectType } from "../../utils/types";
 
 const { Option } = Select;
 
-// interface Props {
-//   handleSelectedType: (event: string) => void;
-//   arrayOfTypes: string[];
-//   myValue: string;
-//   error?: string;
-// }
-
-function SelectType({
+function SelectPokemonType({
   handleSelectedType,
   arrayOfTypes,
-  myValue,
-  error,
+  pokemonType,
 }: ISelectType) {
   const options = arrayOfTypes.map((myType, index) => (
     <Option key={index} value={myType}>
@@ -28,7 +19,7 @@ function SelectType({
     <div style={{ display: "flex", justifyContent: "center" }}>
       <Select
         showSearch
-        value={myValue}
+        value={pokemonType}
         bordered={true}
         style={{ width: 500 }}
         onChange={handleSelectedType}
@@ -44,4 +35,4 @@ function SelectType({
   );
 }
 
-export default SelectType;
+export default SelectPokemonType;

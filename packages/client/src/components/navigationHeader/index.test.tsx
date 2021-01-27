@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import NavigationHeader from "./NavigationHeader";
+import NavigationHeader from ".";
 
 describe("Navigation Header renders", () => {
   it("logo and subtitle", () => {

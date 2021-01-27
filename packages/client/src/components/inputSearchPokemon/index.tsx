@@ -1,35 +1,18 @@
 import React from "react";
 import { Input, Button, Tooltip, Form, AutoComplete } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
-import { inputSearch, buttonSearch } from "../assets/style";
+import { form, inputSearch, buttonSearch } from "../../assets/style";
+import { ISearchInput } from "../../utils/types";
 
-interface Props {
-  pokemonName: string;
-  setPokemonName: Function;
-  handleSearchPokemon: () => void;
-  allPokemonsName: any[];
-}
-
-function SearchInput({
+function InputSearchPokemon({
   pokemonName,
   setPokemonName,
   handleSearchPokemon,
   allPokemonsName,
-}: Props) {
+}: ISearchInput) {
   return (
     <div>
-      <Form
-        name="basic"
-        onFinish={handleSearchPokemon}
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          flexWrap: "wrap",
-          marginTop: "20px",
-        }}
-      >
+      <Form name="basic" onFinish={handleSearchPokemon} style={form}>
         <Form.Item>
           <AutoComplete
             options={allPokemonsName}
@@ -71,4 +54,4 @@ function SearchInput({
   );
 }
 
-export default SearchInput;
+export default InputSearchPokemon;
