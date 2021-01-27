@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../../assets/media/satispay-icon.jpg";
 import { PageHeader } from "antd";
+// Satispay logo
+import logo from "../../assets/media/satispay-icon.jpg";
 
 function NavigationHeader() {
   return (

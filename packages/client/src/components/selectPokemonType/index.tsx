@@ -1,6 +1,10 @@
 import React from "react";
+
+// Style imports
 import { Select, Tooltip } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
+
+// Props Interface
 import { ISelectType } from "../../utils/types";
 
 const { Option } = Select;

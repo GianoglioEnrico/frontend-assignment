@@ -1,8 +1,11 @@
 import React from "react";
-import { IButtons } from "../../utils/types";
+
+// Style imports
 import { Button } from "antd";
 import { PlusOutlined, CloseOutlined } from "@ant-design/icons";
 import { buttonsContainer } from "../../assets/style";
+// Props Interface
+import { IButtons } from "../../utils/types";
 
 function Buttons({
   showTable,

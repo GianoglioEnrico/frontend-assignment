@@ -1,7 +1,11 @@
 import React from "react";
+
+// Style imports
 import { Input, Button, Tooltip, Form, AutoComplete } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { form, inputSearch, buttonSearch } from "../../assets/style";
+
+// Props Interface
 import { ISearchInput } from "../../utils/types";
 
 function InputSearchPokemon({

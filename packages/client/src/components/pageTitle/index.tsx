@@ -1,4 +1,6 @@
 import React from "react";
+
+// Style imports
 import { Typography } from "antd";
 import { title, subtitle } from "../../assets/style";
 

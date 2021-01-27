@@ -7,9 +7,9 @@ import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client";
 import { relayStylePagination } from "@apollo/client/utilities";
 
+// Apollo Client initialization
 const client = new ApolloClient({
   uri: "http://localhost:4000/",
-  //cache: new InMemoryCache(),
   cache: new InMemoryCache({
     typePolicies: {
       Query: {
@@ -20,24 +20,6 @@ const client = new ApolloClient({
       },
     },
   }),
-  // cache: new InMemoryCache({
-  //   typePolicies: {
-  //     Query: {
-  //       fields: {
-  //         pokemonsByType: {
-  //           // Don't cache separate results based on
-  //           // any of this field's arguments.
-  //           keyArgs: ["type", "limit", "after"],
-  //           // Concatenate the incoming list items with
-  //           // the existing list items.
-  //           merge(existing = [], incoming) {
-  //             return [...existing, ...incoming];
-  //           },
-  //         },
-  //       },
-  //     },
-  //   },
-  // }),
 });
 
 ReactDOM.render(

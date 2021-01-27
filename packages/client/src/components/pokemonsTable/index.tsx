@@ -1,6 +1,10 @@
 import React from "react";
+
+// Style imports
 import { Table, Alert } from "antd";
 import { table, tableContainer } from "../../assets/style";
+
+// Props Interface
 import { IPokemonTable } from "../../utils/types";
 
 const columns = [
