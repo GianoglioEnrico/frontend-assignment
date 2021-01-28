@@ -43,7 +43,7 @@ function PokemonsTable({
   return (
     <div style={tableContainer}>
       {error ? (
-        <Alert message={error} style={{ marginTop: "10px" }} type="error" />
+        <Alert message={error} style={{ margin: "10px 0 " }} type="error" />
       ) : (
         (dataPokemonName || filteredPokemon) && (
           <Table
