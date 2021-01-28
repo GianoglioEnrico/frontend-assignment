@@ -53,3 +53,7 @@
   height: 100px;
   padding: 10px;
 }
+.ant-table table,
+.ant-table-thead > tr > th {
+  text-align: center;
+}

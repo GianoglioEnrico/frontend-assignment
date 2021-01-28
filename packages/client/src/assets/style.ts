@@ -51,3 +51,7 @@ export const buttonsContainer = {
   alignItems: "center",
   marginBottom: "30px",
 };
+
+export const buttonsShadow = {
+  boxShadow: "0 4px 16px 0 rgba(0,0,0,0.2)",
+};
